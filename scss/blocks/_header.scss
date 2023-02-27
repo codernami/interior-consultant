@@ -1,0 +1,122 @@
+.header {
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark;
+
+    &__brand {
+        text-decoration: none;
+        font-family: $logo;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: $white;
+        border: 1px solid $white;
+        text-align: center;
+        padding: .4rem;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1rem;
+            margin: 2rem;
+            margin-left: 0;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        align-items: center;
+    }    
+}
+.hamburger {
+    z-index: 700;
+
+    &__bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    .active &__bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .active &__bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .active &__bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transform: translateX(100%);
+    transition: transform .3s;
+    overflow: hidden;
+    background-color: $dark;
+    z-index: 200;
+
+    &__item {
+        margin: 2rem 0;
+
+        @media only screen and (min-width: 768px) {
+            margin-right: 1.5rem;
+            margin-top: .5rem;
+
+            :hover {
+                color: $hover_nav;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        color: $white;
+        font-family: $text;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 500;
+
+        &--current {
+            text-decoration: underline;    
+        }
+    }
+
+    &__show {
+        transform: translateX(0);
+    }
+
+    @media only screen and (min-width: 768px) {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+        height: auto;
+        width: auto;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,68 @@
+.description {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        font-family: $main-title;
+        font-weight: normal;
+        font-size: 2.25rem;
+        color: $white;
+        text-align: left;
+    
+        @media screen and (min-width:942px){
+            font-size: 2.5rem;
+        } 
+        @media screen and (min-width:1200px){
+            font-size: 3rem;
+        }
+    }
+    
+    &__text {
+        font-family: $text;
+        font-weight: 300;
+        font-style: light;
+        font-size: 0.875rem;
+        color: $white;
+        width: 250px;
+        line-height: 1.5;
+    
+        @media screen and (min-width:942px){
+            font-size: 1.25rem;
+        } 
+        @media screen and (min-width:1200px){
+            font-size: 1.5rem;
+            width: 410px;
+            margin-bottom: 2rem;
+        } 
+    }
+    
+    &__link {
+        display: flex;
+        font-family: $text;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 0.875rem;
+        color: $white;
+        text-decoration: none;
+        margin-top: 3rem;
+    
+        @media screen and (min-width:942px){
+            font-size: 0.75rem;
+        } 
+        @media screen and (min-width:1200px){
+            font-size: 1.125rem;
+        } 
+    }
+    
+    &__icon {
+        padding-left: 1rem;
+        padding-top: .2rem;
+    }
+
+    @media screen and (min-width:942px){
+        padding-right: 5rem;
+    }    
+    @media screen and (min-width: 1200px) {
+        padding: 2rem;
+        padding-left: 0;
+    }
+}
