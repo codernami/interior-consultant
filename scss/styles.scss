@@ -1,14 +1,14 @@
 // Configuración guías de estilo
-@import'scss/config/_fonts';
-@import'scss/config/_colors';
+@use'config/fonts';
+@use'config/colors';
 
 // Estilos base
-@import'scss/base/_normalize.scss';
-@import'scss/base/_base.scss';
+@use'base/normalize';
+@use'base/base';
 
 // Bloques
-@import'scss/blocks/_header.scss';
-@import'scss/blocks/_main.scss';
-@import'scss/blocks/_description.scss';
-@import'scss/blocks/_card.scss';
-@import'scss/blocks/_footer.scss'; 
+@use'blocks/header';
+@use'blocks/main';
+@use'blocks/description';
+@use'blocks/card';
+@use'blocks/footer'; 
