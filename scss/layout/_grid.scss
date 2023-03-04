@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.design {
+    @include medium {
+        display: grid;
+        grid-template-columns: 300px, 350px;
+        grid-template-rows: 500px, 200px;
+
+        .description {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .img {
+            grid-column: 2 / 3;   
+            grid-row: 1 / 2;
+        }
+        .card {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }    
+    }
+}
