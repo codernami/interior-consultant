@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-  <link rel="icon" href="/assets/devchallenges.png" />
+  <link rel="icon" href="./scss/assets/devchallenges.png" />
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
   <script src="https://kit.fontawesome.com/f00548021f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./scss/styles.css">
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <div class="container">
     <header class="header">
       <nav class="navbar">
         <a href="#" class="navbar__brand">
@@ -51,7 +50,7 @@
     </header>
 
     <main>
-      <section class="main">
+      <section class= "design">
         <div class="description">
           <h2 class="description__title">
             Modern interior
@@ -66,30 +65,31 @@
           </a>
         </div>
 
-        <div class="design">
-          <img class="design__img" 
-            src="./scss/assets/photo1.png" 
-            alt="comfortable lightfull living room">
-          <div class="design__card">
-            <div class="design__card-header">
-              <img class="design__card-header__avatar" 
-                src="./scss/assets/photo2.png" 
-                alt="Aliza Webber">
-              <p class="design__card-header__name">
-                Aliza Webber</br>
-                <span class="design__card-header__position">
-                  Interior designer
-                </span>
-              </p>
-            </div>
-            <p class="design__card-details">
-              Designed in 2020 by Aliza Webber
+        <img class="img" 
+          src="./scss/assets/photo1.png" 
+          alt="comfortable lightfull living room">
+
+        <div class="card">
+          <div class="card__header">
+            <img class="card__img" 
+              src="./scss/assets/photo2.png"
+              alt="Aliza Webber">
+
+            <p class="card__name">
+              Aliza Webber</br>
+              <span class="card__position">
+                Interior designer
+              </span>
             </p>
           </div>
+
+          <p class="card__attribution">
+            Designed in 2020 by Aliza Webber
+          </p>
+        </div>
         </div>
       </section>
     </main>
-  </div>
 </body>
 
 </html>

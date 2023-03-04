@@ -1,13 +1,11 @@
-// Configuración guías de estilo
-@use'config/fonts';
-@use'config/colors';
+@use'abstracts/fonts';
+@use'abstracts/colors';
 
-// Estilos base
-@use'base/normalize';
-@use'base/base';
+@use'vendors/normalize';
 
-// Bloques
-@use'blocks/header';
-@use'blocks/main';
-@use'blocks/description';
-@use'blocks/card';
+@use'layout/body';
+@use'layout/grid';
+
+@use'components/navbar';
+@use'components/description';
+@use'components/card';
